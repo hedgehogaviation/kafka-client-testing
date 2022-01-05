@@ -1,0 +1,4 @@
+- Make target to install topicctl
+- Contibute Dockerfile to opticctl project
+- Make Kafka broker IP address a variable.
+- Some instructions would be nice.

@@ -1,0 +1,16 @@
+input {
+  stdin {
+    id => "stdin"
+  }
+}
+
+output {
+  kafka {
+    codec => json
+    topic_id => "logs"
+    compression_type => "${compression:none}"
+    client_id => "zaphod"
+    acks => "${acks:0}"
+    bootstrap_servers => "10.2.20.101:9092,10.2.20.102:9092,10.2.20.103:9092"
+  }
+}
